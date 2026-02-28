@@ -1,0 +1,51 @@
+body {
+    margin: 0;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.glass-card {
+    backdrop-filter: blur(15px);
+    background: rgba(255,255,255,0.08);
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 0 30px rgba(0,255,255,0.3);
+    border: 1px solid rgba(255,255,255,0.2);
+    color: white;
+}
+
+.loop-btn {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 12px;
+    font-weight: bold;
+    background: linear-gradient(45deg, #00f5a0, #00d9f5);
+    color: #000;
+    transition: 0.3s ease;
+}
+
+.loop-btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px #00f5a0;
+}
+
+.output-section {
+    background: rgba(0,0,0,0.6);
+    padding: 20px;
+    border-radius: 15px;
+    min-height: 80px;
+    font-weight: bold;
+    color: #00f5a0;
+    box-shadow: inset 0 0 15px rgba(0,255,255,0.4);
+}
+
+@media(max-width: 768px){
+    .glass-card {
+        padding: 25px;
+    }
+}
